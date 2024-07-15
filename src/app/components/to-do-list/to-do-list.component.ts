@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Component({
+  selector: 'app-to-do-list',
+  standalone: true,
+  imports: [],
+  templateUrl: './to-do-list.component.html',
+  styleUrl: './to-do-list.component.scss',
+})
+export class ToDoListComponent {}
