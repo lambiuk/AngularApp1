@@ -1,1 +1,8 @@
-<p>to-do-list works!</p>
+<div *ngFor="let toDo of this.toDos">
+  <ul>
+    <li>{{ toDo.name }}</li>
+  </ul>
+</div>
+<div *ngIf="error?.length > 0">
+  <p>{{ error }}</p>
+</div>
