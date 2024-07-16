@@ -14,9 +14,7 @@ import { catchError, of } from 'rxjs';
 export class ToDoListComponent {
   toDos: ToDoItem[] = [];
   error: any;
-  //service: ToDoService;
   constructor(private toDoService: ToDoService) {
-    //this.service = toDoService;
     this.toDoService
       .getAllToDos()
       .pipe(
